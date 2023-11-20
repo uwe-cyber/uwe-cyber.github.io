@@ -40,7 +40,45 @@
 
 
 		<style>
+.container {
+  overflow: hidden;
+}
 
+.filterDiv {
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #666;
+  color: white;
+}
 
 		</style>
 
@@ -67,12 +105,30 @@
 						<h2>CyberWEST - West of England Schools and Teachers</h2>
 					</header>
 
-					<div class="row">
+					<div id="myBtnContainer">
+					  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+					  <button class="btn" onclick="filterSelection('netsec')"> NetSec</button>
+					  <button class="btn" onclick="filterSelection('ks3')"> KS3</button>
+					  <button class="btn" onclick="filterSelection('ks4')"> KS4</button>
+					</div>
+
+					
+					<div class="container">
+					<div class="filterDiv row netsec ks3">
 					<article class="col-6 col-12-xsmall work-item">
 						<img src="https://github.com/uwe-cyber/uwe-cyber.github.io/blob/main/images/thumbs/funfair.jpg?raw=true" alt="" class="image fit thumb" /></a>
 						<h3>Cyber Funfair</h3>
 						<p>Interactive Lego for teaching Network Security<a href="#">More details</a></p>
 					</article>
+					</div>
+					<div class="filterDiv row ks3 ks4">
+					<article class="col-6 col-12-xsmall work-item">
+						<img src="https://github.com/uwe-cyber/uwe-cyber.github.io/blob/main/images/thumbs/uwe_pilab.png?raw=true" alt="" class="image fit thumb"  /></a>
+						<h3>PiLab</h3>
+						<p>Raspberry Pi Lab for teaching Network Security<a href="#">More details</a></p>
+					</article>
+					</div>
+					</div>
 					
 					
 					</section>
@@ -114,12 +170,56 @@
 			<script src="./../assets/js/main.js"></script>
 
 			<script>
-				//myFunction('About');
-				myFunction('Videos');
-				myFunction('Photos');
-				myFunction('Events');
-				myFunction('People');
-				myFunction('Twitter');
+				
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+				
 			</script>
 
 	</body>
