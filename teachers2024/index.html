@@ -221,11 +221,14 @@ for (var i = 0; i < btns.length; i++) {
 $(document).ready(function(){
   $("#myInput").on("keyup", function() {
     var value = $(this).val().toLowerCase();
-    $("#myDIV *").filter(function() {
+	$("article").each(function() {
+    
       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
     });
   });
 });
+
+			//$("#myDIV *").filter(function() {
 </script>
 		
 
