@@ -1,0 +1,478 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-59713782-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-59713782-1');
+		</script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+		<title>CyberWEST - West of England Schools and Teachers</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+
+
+
+		<script>
+
+		function myFunction(name) {
+		  var x = document.getElementById(name);
+		  if (x.style.display === "none") {
+		    x.style.display = "block";
+		  } else {
+		    x.style.display = "none";
+		  }
+		}
+
+
+		</script>
+
+
+		<style>
+.container {
+  overflow: hidden;
+}
+
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+		</style>
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="image avatar2"><img src="./../images/uwecyber.png" width="300px" alt="" /></a>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+			<!--	<img src="../images/ace-cse.png" alt="" class="image fit thumb"/></a>
+					<img src="../images/uwe_location.jpg" alt="" class="image fit thumb"/></a> -->
+
+				<!-- One -->
+
+				<section id="one">
+					<header class="major">
+						<h2>CyberWEST - West of England Schools and Teachers</h2>
+					</header>
+					<div id="search">
+						<p>UWE Bristol lead the CyberWEST project, supported by the National Cyber Security Centre in collaboration with the University of Bristol, University of Exeter and the University of Plymouth.</p>
+						<p>The project builds on previous outreach to develop schools workshops across the South West region, accompanied by an activity repository and an equipment loan library to support teaching and learning in Cyber Security Education.</p>
+						<p>The main repository for workshop activities is available here: <a href="https://github.com/uwe-cyber/teachersworkshop2024">https://github.com/uwe-cyber/teachersworkshop2024</a></p>
+						<p>Below is a searchable set of activities, covering both the recent workshops, previous workshop activities, and other useful external resources, which we hope is useful for signposting the wealth of activities that are available online.</p> 
+						<p>To learn more about the project, please email <b>phil.legg@uwe.ac.uk</b>.</p>
+						<p>To submit new resources to be listed on this page, please <a href="https://forms.office.com/e/3gvfbZY1s8">complete this form</a>.</p>
+						<input id="myInput" type="text" placeholder="Search..">
+					</div>
+
+					<div id="myBtnContainer">
+					  <p><button class="btn" onclick="filterSelection(' ')"> Show all</button>
+					  <button class="btn" onclick="filterSelection('network security')">Network Security</button>
+					  <button class="btn" onclick="filterSelection('ks3')">KS3</button>
+					  <button class="btn" onclick="filterSelection('ks4')">KS4</button></p>
+					</div>
+
+					
+					<div class="container">
+					<div id="myDIV">
+						<article class="col-6 col-12-xsmall work-item">
+							<h3>Basic Pentesting</h3>
+							<p>Learn about basic pentration testing, incluing service scanning, password brute forcing, and hash cracking</p>
+							<p>Tags: KS4</p>
+							<p><a href="https://github.com/pa-legg/school/blob/main/basicpentest.md">More details</a></p>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<img src="https://github.com/uwe-cyber/uwe-cyber.github.io/blob/main/images/thumbs/funfair.jpg?raw=true" height="120px"  />
+							<h3>Cyber Funfair</h3>
+							<p>Can you secure the network and keep the funfair safe to ride?</p>
+							<p>Tags: Network Security, KS3</p>
+							<p><a href="https://github.com/uwe-cyber/Future_Funfair">More details</a></p>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<img src="https://uwe-cyber.github.io/images/thumbs/scalextric.jpg" height="120px"  /> 
+							<h3>Cyber Scalextric</h3>
+							<p>Can you gain access to the Scoreboard system, compromise the lap counter and rig the race?</p>
+							<p>Tags: NetSec, KS3</p>
+							<p><a href="https://uwe-cyber.github.io/scalextric/">More details</a></p>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<h3>IoT HomeLab</h3>
+							<p>Learn to programmatically control IoT devices and conduct an remote CTF to control these</p>
+							<p>Tags: KS4, Cyber-Physical Systems, IoT</p>
+							<p><a href="https://uwe-cyber.github.io/iot_homelab/">More details</a></p>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<h3>OhSINT</h3>
+							<p>Learn about online Open Source intelligence gathering</p>
+							<p>Tags: OSINT</p>
+							<p><a href="https://github.com/pa-legg/school/blob/main/ohsint.md">More details</a></p>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<h3>OWASP Juice Shop</h3>
+							<p>Learn web application security on a vulnerable shopping web site</p>
+							<p>Tags: KS3, Web App Security, SQL Injection, Brute Force</p>
+							<p><a href="https://github.com/pa-legg/school/blob/main/juice-shop.md">More details</a></p>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<img src="https://github.com/uwe-cyber/uwe-cyber.github.io/blob/main/images/thumbs/uwe_pilab.png?raw=true" height="120px"  />
+							<h3>PiLab</h3>
+							<p>Learn about remote access and network security using a self-contained isolated portable Rasyberry Pi lab.</p>
+							<p>Tags: KS3, KS4</p>
+							<p><a href="https://uwe-cyber.github.io/pilab/">More details</a></p>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<img src="https://uwe-cyber.github.io/images/thumbs/sphero.jpg" height="120px"  />
+							<h3>SpheroLab</h3>
+							<p>Learn Python Programming for the Sphero Robot</p>
+							<p>Tags: KS3</p>
+							<p><a href="https://uwe-cyber.github.io/spherolab/">More details</a></p>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<img src="https://uwe-cyber.github.io/images/thumbs/factoryio.png" height="120px"  />
+							<h3>Teaching Cyber Physical Systems Security using Interactive Simulation</h3>
+							<p>Learn to program a Programmable Logic Controller and how to compromise an Industrial Control System</p>
+							<p>Tags: KS4, Cyber-Physical Systems, Industrial Control Systems, PLC</p>
+							<p><a href="https://uwe-cyber.github.io/cpss/">More details</a></p>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<img src="https://m.media-amazon.com/images/I/715lLPSw2GL._AC_UF1000,1000_QL80_.jpg" height="120px"  />
+							<h3>Raspberry Pi Foundation: Computing Curriculum Key Stage 1 Resources</h3>
+							<p>Tags: KS1</p>
+							<p><a href="https://www.raspberrypi.org/curriculum/key-stage-1">More details</a></p>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<img src="https://m.media-amazon.com/images/I/715lLPSw2GL._AC_UF1000,1000_QL80_.jpg" height="120px"  />
+							<h3>Raspberry Pi Foundation: Computing Curriculum Key Stage 2 Resources</h3>
+							<p>Tags: KS2</p>
+							<p><a href="https://www.raspberrypi.org/curriculum/key-stage-2">More details</a></p>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<img src="https://m.media-amazon.com/images/I/715lLPSw2GL._AC_UF1000,1000_QL80_.jpg" height="120px"  />
+							<h3>Raspberry Pi Foundation: Computing Curriculum Key Stage 3 Resources</h3>
+							<p>Tags: KS3</p>
+							<p><a href="https://www.raspberrypi.org/curriculum/key-stage-3">More details</a></p>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<img src="https://m.media-amazon.com/images/I/715lLPSw2GL._AC_UF1000,1000_QL80_.jpg" height="120px"  />
+							<h3>Raspberry Pi Foundation: Computing Curriculum Key Stage 4 Resources</h3>
+							<p>Tags: KS4</p>
+							<p><a href="https://www.raspberrypi.org/curriculum/key-stage-4">More details</a></p>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<img src="https://isaaccomputerscience.org/assets/logo.svg" height="120px"  />
+							<h3>Issac Computer Science (part of the Department for Education's National Centre for Computing Education)</h3>
+							<p>Tags: KS3, KS4</p>
+							<p><a href="https://isaaccomputerscience.org/?examBoard=all&stage=all">More details</a></p>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<img src="https://www.odysseyla.org/_site/images/design/logo@2x.png" height="120px"  />
+							<h3>Odyssey Learning Alliance</h3>
+							<p>Tags: KS3, KS4</p>
+							<p><a href="https://www.odysseyla.org">More details</a></p>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<img src="https://pbs.twimg.com/media/FWh2l_aWQAM6IsJ.jpg" height="120px"  />
+							<h3>NCSC CyberFirst</h3>
+							<p>Tags: KS3, KS4, Cyber Security</p>
+							<p><a href="https://www.ncsc.gov.uk/cyberfirst/overview">More details</a></p>
+						</article>
+						
+						<article class="col-6 col-12-xsmall work-item">
+							<img src="https://uwe-cyber.github.io/images/uwecyber.png" height="120px"  />
+							<h3>ACE-CSE Workshop: Social Media, Digital Hygiene and Footprints</h3>
+							<p>Tags: KS3, Cyber Security</p>
+							<p><a href="https://uwe-cyber.github.io/teachers/slides/01-cyber_hygiene.pdf">Slides</a></p>
+							<p><a href="https://uwe-cyber.github.io/teachers/practicals/session1.zip">Practical Materials</a></p>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<img src="https://uwe-cyber.github.io/images/uwecyber.png" height="120px"  />
+							<h3>ACE-CSE Workshop: OS Reporting, Intelligence and Verification</h3>
+							<p>Tags: KS3, Cyber Security</p>
+							<p><a href="https://uwe-cyber.github.io/teachers/slides/02-open_source_intel.pdf">Slides</a></p>
+							<p><a href="https://uwe-cyber.github.io/teachers/practicals/session1.zip">Practical Materials</a></p>
+						</article>
+						
+						<article class="col-6 col-12-xsmall work-item">
+							<img src="https://uwe-cyber.github.io/images/uwecyber.png" height="120px"  />
+							<h3>ACE-CSE Workshop: CTFs, Hacking and Online Resources</h3>
+							<p>Tags: KS3, Cyber Security</p>
+							<p><a href="https://uwe-cyber.github.io/teachers/slides/03-ctf_hacking.pdf">Slides</a></p>
+							<p><a href="https://uwe-cyber.github.io/teachers/practicals/session1.zip">Practical Materials</a></p>
+						</article>
+
+						<article class="col-6 col-12-xsmall work-item">
+							<img src="https://uwe-cyber.github.io/images/uwecyber.png" height="120px"  />
+							<h3>ACE-CSE Workshop: Cyber Basics, Attacks, and Firewalls</h3>
+							<p>Tags: KS4, Cyber Security</p>
+							<p><a href="https://uwe-cyber.github.io/teachers/slides/04-cyber_basics.pdf">Slides</a></p>
+							<p><a href="https://uwe-cyber.github.io/teachers/practicals/session2.zip">Practical Materials</a></p>
+						</article>
+
+						<article class="col-6 col-12-xsmall work-item">
+							<img src="https://uwe-cyber.github.io/images/uwecyber.png" height="120px"  />
+							<h3>ACE-CSE Workshop: Careers and Opportunities in Cyber Security</h3>
+							<p>Tags: KS5, Cyber Security</p>
+							<p><a href="https://uwe-cyber.github.io/teachers/slides/05-conclusion.pdf">Slides</a></p>
+						</article>
+
+						<article class="col-6 col-12-xsmall work-item">
+							<h3>Google Teachable Machine</h3>
+							<p>Tags: KS5, AI, machine learning</p>
+							<p><a href="https://teachablemachine.withgoogle.com/">Web link</a></p>
+						</article>
+
+						<article class="col-6 col-12-xsmall work-item">
+							<h3>Stable Diffusion</h3>
+							<p>Tags: KS5, AI, image</p>
+							<p><a href="https://stablediffusionweb.com/">Web link</a></p>
+						</article>
+
+						<article class="col-6 col-12-xsmall work-item">
+							<img src="https://uwe-cyber.github.io/images/uwecyber.png" height="120px"  />
+							<h3>CyberWEST Workshop (UWE): A (micro)Bit of Radio Security</h3>
+							<p>Tags: KS3, KS4, Cyber Security</p>
+							<p><a href="https://github.com/uwe-cyber/teachersworkshop2024/blob/main/lesson-microbitradiosecurity.md">Resources</a></p>
+						</article>
+
+						<article class="col-6 col-12-xsmall work-item">
+							<img src="https://uwe-cyber.github.io/images/uwecyber.png" height="120px"  />
+							<h3>CyberWEST Workshop (UWE): Securing cyber-physical Systems through play: Cyber FunFair</h3>
+							<p>Tags: KS3, KS4, Cyber Security</p>
+							<p><a href="https://github.com/uwe-cyber/teachersworkshop2024/blob/main/lesson-cyberfunfair.md">Resources</a></p>
+						</article>
+
+						<article class="col-6 col-12-xsmall work-item">
+							<img src="https://uwe-cyber.github.io/images/uwecyber.png" height="120px"  />
+							<h3>CyberWEST Workshop (UWE): Managing cyber incidents - growing into a cyber mindset using the Incident Response card game</h3>
+							<p>Tags: KS3, KS4, Cyber Security</p>
+							<p><a href="https://github.com/uwe-cyber/teachersworkshop2024/blob/main/lesson-IRM.md">Resources</a></p>
+						</article>
+
+						<article class="col-6 col-12-xsmall work-item">
+							<img src="https://uwe-cyber.github.io/teachers2024/images/uop.png" height="120px"  />
+							<h3>CyberWEST Workshop (Plymouth): Fighting Cybercrime using Digital Forensics</h3>
+							<p>Tags: KS3, KS4, Cyber Security</p>
+							<p><a href="https://github.com/UoP-Cyber/CyberWEST-2024/blob/main/Lession1.md">Resources</a></p>
+						</article>
+
+						<article class="col-6 col-12-xsmall work-item">
+							<img src="https://uwe-cyber.github.io/teachers2024/images/uop.png" height="120px"  />
+							<h3>CyberWEST Workshop (Plymouth): The Evolving World of Biometric Authentication</h3>
+							<p>Tags: KS3, KS4, Cyber Security</p>
+							<p><a href="https://github.com/UoP-Cyber/CyberWEST-2024/blob/main/Lession2.md">Resources</a></p>
+						</article>
+
+						<article class="col-6 col-12-xsmall work-item">
+							<img src="https://uwe-cyber.github.io/teachers2024/images/uop.png" height="120px"  />
+							<h3>CyberWEST Workshop (Plymouth): Human Aspects of Cyber Security – Social engineering, Awareness and Culture</h3>
+							<p>Tags: KS3, KS4, Cyber Security</p>
+							<p><a href="https://github.com/UoP-Cyber/CyberWEST-2024/blob/main/Lession3.md">Resources</a></p>
+						</article>
+
+						<article class="col-6 col-12-xsmall work-item">
+							<img src="https://uwe-cyber.github.io/teachers2024/images/uop.png" height="120px"  />
+							<h3>CyberWEST Workshop (Plymouth): Network Attack Detection and Defence</h3>
+							<p>Tags: KS3, KS4, Cyber Security</p>
+							<p><a href="https://github.com/UoP-Cyber/CyberWEST-2024/blob/main/Lession4.md">Resources</a></p>
+						</article>
+
+						<article class="col-6 col-12-xsmall work-item">
+							<img src="https://uwe-cyber.github.io/images/uwecyber.png" height="120px"  />
+							<h3>CyberWEST Workshop - Overview</h3>
+							<p>Tags: KS3, KS4, Cyber Security</p>
+							<p><a href="https://github.com/uwe-cyber/teachersworkshop2024">Resources</a></p>
+						</article>
+
+						<article class="col-6 col-12-xsmall work-item">
+							<img src="https://www.elecfreaks.com/learn-en/_images/cutebot_01_01.jpg" height="120px"  />
+							<h3>Elecfreaks - Cutebot Car</h3>
+							<p>Tags: KS3, KS4, Cyber Security</p>
+							<p><a href="https://www.elecfreaks.com/learn-en/microbitKit/smart_cutebot/cutebot_car.html">Resources</a></p>
+						</article>
+
+						<article class="col-6 col-12-xsmall work-item">
+							<img src="https://www.elecfreaks.com/learn-en/_images/case-05-01.png" height="120px"  />
+							<h3>Elecfreaks - Wonder Building Kit - Rotary Chairs</h3>
+							<p>Tags: KS3, KS4, Lego, Technic, programming</p>
+							<p><a href="https://www.elecfreaks.com/learn-en/microbitKit/Wonder_Building_Kit/Case_05.html">Resources</a></p>
+						</article>
+
+						<article class="col-6 col-12-xsmall work-item">
+							<img src="https://www.elecfreaks.com/learn-en/_images/case-08-01.png" height="120px"  />
+							<h3>Elecfreaks - Wonder Building Kit - Robot Arm</h3>
+							<p>Tags: KS3, KS4, Lego, Technic, programming</p>
+							<p><a href="https://www.elecfreaks.com/learn-en/microbitKit/Wonder_Building_Kit/Case_08.html">Resources</a></p>
+						</article>
+
+
+					</div>
+					</div>
+					
+					
+					</section>
+
+					
+					
+
+
+
+					
+
+					
+		
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="http://www.twitter.com/uwecyber" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.youtube.com/channel/UCSSPm9qkPuoXy3lJnCWu7FQ" class="icon brands fa-youtube"><span class="label">Youtube</span></a></li>
+					</ul>
+					<ul class="copyright">
+
+					<!--	<a href="#" class="image"><img src="./images/uwe.png" width="150px" alt="" /></a><br/> -->
+
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="./../assets/js/jquery.min.js"></script>
+			<script src="./../assets/js/jquery.poptrox.min.js"></script>
+			<script src="./../assets/js/browser.min.js"></script>
+			<script src="./../assets/js/breakpoints.min.js"></script>
+			<script src="./../assets/js/util.js"></script>
+			<script src="./../assets/js/main.js"></script>
+
+			<script>
+				
+filterSelection("all")
+function filterSelection_old(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+				
+			</script>
+
+		<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+	$("article").each(function() {
+    
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+
+function filterSelection(c) {
+var value = c.toLowerCase();
+  $("article").each(function() {
+    
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+}
+
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+	$("article").each(function() {
+    
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+
+			//$("#myDIV *").filter(function() {
+</script>
+		
+
+	</body>
+</html>
