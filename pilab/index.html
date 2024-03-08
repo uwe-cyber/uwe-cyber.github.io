@@ -13091,6 +13091,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><img src="https://uwe-cyber.github.io/images/uwe_banner.png"></p>
 <h1 id="Teachers-Guide-to-the-UWEcyber-Raspberry-Pi-Cyber-Range">Teachers Guide to the UWEcyber Raspberry Pi Cyber Range<a class="anchor-link" href="#Teachers-Guide-to-the-UWEcyber-Raspberry-Pi-Cyber-Range">&#182;</a></h1><p>This worksheet will provide guidance for setting up the UWEcyber Raspberry Pi Cyber Range. The purpose of this cyber range is to provide an "out-of-the-box" solution for schools to deploy a networked infrastructure that can then be used to model attack and defence. The range can be easily extended with "containerised" applications that provide further challenges for students, and we provide OWASP Juice Shop and CTFd as pre-installed containerised applications.</p>
+  <p><b>Please note:</b>A new simplified version of this guide is available in the <a href="https://github.com/uwe-cyber/teachersworkshop2024/blob/main/lesson-pilab.md">CyberWEST teachers workshop</a> repository. We have kept this as the full documentation, however some aspects may be out of date for the latest release of the PiLab environment.</p>
 <hr>
 <ol>
 <li><a href="#Setup">Setup</a></li>
@@ -13104,10 +13105,10 @@ div#notebook {
 <hr>
 <h1 id="0.-Setup"><a id="Setup" />0. Setup<a class="anchor-link" href="#0.-Setup">&#182;</a></h1><p>The first step is to download the two Raspberry Pi images available from the UWEcyber website:</p>
 <ul>
-<li><a href="https://uweacuk-my.sharepoint.com/:u:/g/personal/phil_legg_uwe_ac_uk/EVd3HbC6_OhIn8g_DOQoWKQB_9ukP7tq3HuyUVRHux0Rvg?e=Kn6dVz">Download UWEcyber-KaliPi (32GB)</a> (v1.0.1 - updated 11th March 2022)</li>
-<li><a href="https://uweacuk-my.sharepoint.com/:u:/g/personal/phil_legg_uwe_ac_uk/EVwHutmJVGNKsxGrxlQTpxEBcZ1W54nCW8ef_PZzpmD3lQ?e=oQZcYb">Download UWEcyber-RasPwnOS (8GB)</a> (v1.0.1 - updated 11th March 2022)</li>
+<li><a href="https://uweacuk-my.sharepoint.com/:u:/g/personal/phil_legg_uwe_ac_uk/ETo45O_pFRBHoic9u2aWPg8BPtG4o7CrU5-WMGAOviVkuQ?e=oXhabY">Download PiLab-Client (32GB)</a> (v2 - updated 8th March 2024)</li>
+<li><a href="https://uweacuk-my.sharepoint.com/:u:/g/personal/phil_legg_uwe_ac_uk/ETY9V224DkZJhrjpAgMYIpcBX4DKwQltR0zKHfLYtIYa5A?e=nOkCtS">Download PiLab-Hotspot (8GB)</a> (v2 - updated 8th March 2024)</li>
 </ul>
-<p>(The downloads are password-protected: <strong>UWEcyber2022</strong>).</p>
+<p>(The downloads are password-protected: <strong>uwecyber2024</strong>).</p>
 <p>We have created these two images specifically for this guided lab. The images are customised versions of the <a href="http://raspwn.org/">RasPwnOS</a> image and the <a href="https://www.kali.org/get-kali/#kali-arm">Kali for Raspberry Pi (ARM)</a> image, that we have extended with further functionality. You will also need to download <a href="https://www.balena.io/etcher/">Etcher</a> which is a tool for writing the image file to an SD card that will be used to boot the Raspberry Pi. You will require:</p>
 <ul>
 <li>One instance of the UWEcyber-RasPwnOS, running on either a Raspberry Pi 3 or above, using a SD card with at least 8GB capacity.</li>
